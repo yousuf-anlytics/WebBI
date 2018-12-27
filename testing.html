@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://d3js.org/d3.v3.min.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src='JS/magicjs.js'></script>
+<script src='JS/egs.js'></script>
+<script src="JS/d3.js"></script>
+<link rel="stylesheet" href="CSS/styles.css">
+
+<script>
+      magic();
+   </script>
+<script></script>
+</head>
+<body>
+	<div class='col-md-12 header'>
+		<div class='col-md-1'>
+			<div class="dropdown">
+				<p data-toggle="dropdown">
+					Data <span class="caret"></span>
+				</p>
+				<ul class="dropdown-menu">
+					<li><label id="#bb"> Get Data <input type="file"
+							id="selectFiles" style="display: none;">
+					</label></li>
+					<li><label id="#bb" class='save' onclick='magic();'>Publish</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class='col-md-1'>
+			<br />
+		</div>
+		<div class='col-md-1'></div>
+	</div>
+	</br>
+	</br>
+	<div class='col-md-12'>
+		<div class="col-md-2 canvas"></div>
+		<div class='col-md-7 canvas data-canvas' style="margin-left: 20px;">
+			<div class='col-md-12'>
+				<div class='col-md-6 chart' style='display: none'></div>
+				<div class='col-md-6 chart1' style='display: none'></div>
+			</div>
+		</div>
+		<div class="col-md-2 canvasleft" style="margin-left: 70px;">
+			<div class="col-md-12" style="margin-top: 10px;">
+				<div class="col-md-4">
+					<img src="Images/barchart.png" height="50px" width="50px"
+						id="importbar" onclick='gets();'
+						style="margin-left: -12px; border: 1px solid black;">
+				</div>
+				<div class="col-md-4">
+					<img src="Images/pie.png" height="50px" width="50px" id="importpie"
+						onclick='gets();'
+						style="margin-left: -12px; border: 1px solid black;">
+				</div>
+				<div class="col-md-4">
+					<img src="Images/donut.png" height="50px" width="50px"
+						style="margin-left: -12px; border: 1px solid black;">
+				</div>
+			</div>
+			<div class="col-md-12" style="margin-top: 30px;">
+				<div class="col-md-4">
+					<img src="Images/horbar.png" height="50px" width="50px"
+						style="margin-left: -12px; border: 1px solid black;">
+				</div>
+				<div class="col-md-4">
+					<img src="Images/stacked.png" height="50px" width="50px"
+						style="margin-left: -12px; border: 1px solid black;">
+				</div>
+				<div class="col-md-4">
+					<img src="Images/heatmap.png" height="50px" width="50px"
+						style="margin-left: -12px; border: 1px solid black;">
+				</div>
+			</div>
+			<div class="col-md-12" style="margin-top: 30px;">
+				<div class="col-md-4">
+					<img src="Images/circles.png" height="50px" width="50px"
+						style="margin-left: -12px; border: 1px solid black;">
+				</div>
+				<div class="col-md-4">
+					<img src="Images/whiskers.png" height="50px" width="50px"
+						style="margin-left: -12px; border: 1px solid black;">
+				</div>
+				<div class="col-md-4">
+					<img src="Images/bubble.png" height="50px" width="50px"
+						style="margin-left: -12px; border: 1px solid black;">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Name of the Dashboard</h4>
+				</div>
+				<div class="modal-body">
+					<span> Enter Name: </span> <input type="text" id="fileName">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"
+						id="publish">Publish</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

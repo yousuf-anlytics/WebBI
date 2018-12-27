@@ -1,0 +1,35 @@
+.left, .canvas {
+	height: 605px;
+	margin-top: 1px;
+	background: #f4f6f9;
+	border: 1px solid #d4d6d8;
+}
+
+.canvasleft {
+	height: 605px;
+	margin-top: 1px;
+	background: #f4f6f9;
+	border: 1px solid #d4d6d8;
+}
+
+.header {
+	height: 25px;
+	background: #f4f6f9;
+	border: 1px solid #d4d6d8;
+}
+
+.dropdown:hover {
+	cursor: context-menu;
+}
+
+label {
+	padding: 5px;
+	background: transparent;
+	display: table;
+	color: #000;
+	font-size: 12px;
+}
+
+input[type="file"] {
+	display: none;
+}
